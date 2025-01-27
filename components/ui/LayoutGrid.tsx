@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import { cn } from "@/lib/utils";
 import { Button } from "./MovingBorders";
 
@@ -61,7 +61,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               layout
             >
               {selected?.id === card.id && <SelectedCard selected={selected} />}
-              <BlurImage card={card} />
+              <Blurimg card={card} />
             </motion.div>
           </div>
         </Button>
@@ -78,12 +78,12 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   );
 };
 
-const BlurImage = ({ card }: { card: Card }) => {
+const Blurimg = ({ card }: { card: Card }) => {
   const [loaded, setLoaded] = useState(false);
   return (
-    <Image
+    <img
       src={card.thumbnail}
-      //   change image scale 500 to 100
+      //   change img scale 500 to 100
       height="100"
       width="100"
       onLoad={() => setLoaded(true)}

@@ -11,7 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
-import Image from "next/image";
+
 
 export const BentoGrid = ({
   className,
@@ -93,7 +93,7 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           
           {img && (
-            <Image
+            <img
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
@@ -105,7 +105,7 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <Image
+            <img
               src={spareImg}
               alt={spareImg}
               //   width={220}
