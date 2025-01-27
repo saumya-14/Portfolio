@@ -12,7 +12,7 @@ export function TimelineDemo() {
           Completed my 12th grade from ECS Senior Secondary School, Gwalior, Madhya Pradesh, and secured admission to IIIT Ranchi in November by clearing the JEE exam.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
-          My passion for technology began in school, where I discovered coding and problem-solving. Now, as a  student at IIIT Ranchi, I'm honing my skills in web development, competitive programming, and emerging technologies.
+          My passion for technology began in school, where I discovered coding and problem-solving. Now, as a  student at IIIT Ranchi, I&apos;m honing my skills in web development, competitive programming, and emerging technologies.
           </p>
         </div>
       ),

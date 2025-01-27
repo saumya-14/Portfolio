@@ -38,7 +38,7 @@ export function FloatingDockDemo() {
         
         <IconTextResize className="h-full w-full text-neutral-500 dark:text-neutral-300"/>
       ),
-      href: "#",
+      href: "https://drive.google.com/file/d/1J4g6AfAcIa3J_4BEq7vZY23KPDWTcqgG/view?usp=sharing",
     },
    
     

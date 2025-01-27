@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -42,7 +43,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-2 ">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             
@@ -53,6 +54,12 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
+          <Image
+  src="/profile.jpg"
+  alt="profile"
+  className="rounded-full  object-cover border"
+  height={350} width={350}
+/>
           <TextGenerateEffect
             words="I Build High-Performance Web Application"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
